@@ -25,14 +25,14 @@
                     <img
                         src="./dist/images/logos/disney_star_plus.png"
                         alt="Disney+ - Star+ - Combo+">
-                            <button>Assine Agora</button>
+                            <button class="button">Assine Agora</button>
                             <span class="text">R$ 45,90/mês</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img
                         src="./dist/images/logos/disney_star_plus.png"
                         alt="Disney+ - Star+ - Combo+">
-                            <button>Assine Agora</button>
+                            <button class="button">Assine Agora</button>
                             <span class="text">R$ 45,90/mês</span>
                 </li>
             </ul>
@@ -41,5 +41,117 @@
             </p>
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <!--is active é o comportamento do border-bottom do shows__tabs-->
+            <button class="shows__tabs__button shows__tabs__button--is-active"
+                    data-tab-button="em_breve">
+                Em breve
+            </button>
+            <button class="shows__tabs__button" data-tab-button="populares">
+                Mais populares
+            </button>
+            <button class="shows__tabs__button" data-tab-button="star_plus">
+                Mais no Star+
+            </button>
+        </nav>
+        <ul class="shows__list shows__list--is-active" data-tab-id="em_breve">
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+        </ul>
+
+        <ul class="shows__list" data-tab-id="populares">
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+        </ul>
+
+        <ul class="shows__list" data-tab-id="star_plus">
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big"> Escolha seu plano </h2>
+            <ul class="plans__list">
+                <li class="plans__list__item">
+                    <img src="dist/images/logos/disneyplus_underline.png" alt="Disney+">
+                    <strong class="title--small">R$ 27,90/mes*</strong>
+                    <p class="text--big">
+                        No Disney+ voce encontra as ultimas estreias do cinema, originais e classicos incesqueciveis
+                    </p>
+                    <button class="button">Assine agora</button>
+                </li>
+
+                <li class="plans__list__item">
+                    <img src="dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
+                    <strong class="title--small">R$ 45,90/mes*</strong>
+                    <p class="text--big">
+                        Assine Disney+ e Star+ juntos, Economize e aproveite agora os dois serviços por um preço unico
+                    </p>
+                    <button class="button">Assine agora</button>
+                </li>
+
+                <li class="plans__list__item">
+                    <img src="dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+                    <strong class="title--small">R$ 55,90/mes*</strong>
+                    <p class="text--big">
+                        Disney+, Star+ e STARZPLAY em um plano especcial. Assine agora os tres serviços juntos.
+                    </p>
+                    <button class="button">Assine agora</button>
+                </li>
+            </ul>
+            <p class="text--small">
+                *O preço pode variar caso a assinatura seja feita através de outras plataformas
+            </p>
+    </section>
+    <script src="src/main.js"></script>
 </body>
 </html>

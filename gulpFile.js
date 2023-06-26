@@ -20,6 +20,6 @@ function images() {
 exports.default = gulp.parallel(styles, images) // executar todos npms
 // para modificar automaticamente alterações do projeto:
 exports.watch = function() {
-    // para ativar: npm run build watch
+    // para ativar: npm run dev
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
 }
