@@ -3,7 +3,11 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
-@use 'watch-anywhare';
+@use 'available-devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
 
 @font-face {
     font-family: Avenir;
@@ -23,6 +27,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -71,14 +76,82 @@ body {
 }
 
 .button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: variaveis.$corTextoSecundario;
-    background-color: #6421ff;text-transform: uppercase;
+    background-color: variaveis.$corDeFundoBtPrimario;
+    text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
-    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBtPrimario;
+
+    &:hover {
+        background-color: lighten(variaveis.$corDeFundoBtPrimario, 3%);
+    }
+
+    &--secundary {
+        background-color: variaveis.$corDeFundoBtSecundario;
+        border-color: variaveis.$corDeFundoBtSecundario;
+
+        &:hover {
+            background-color: lighten(variaveis.$corDeFundoBtSecundario, 3%);
+        }
+    }
+
+    &--dark{
+        background-color:rgba(variaveis.$corDeFundoBtDark, 0.8);
+        border-color: variaveis.$corTextoSecundario;
+
+        &:hover {
+            background-color: variaveis.$corTextoSecundario;
+            color: variaveis.$corDeFundo;
+        }
+    }
+}
+
+.image-text-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text_container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        // para o texto dessa sessao ficar em cima da img
+        &__text_container {
+            position: absolute;
+            top: 0vw;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
