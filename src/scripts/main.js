@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function(){
         const posicaoAtual = window.scrollY
 
         if (posicaoAtual < alturaHero) {
-            ocultaElementosHeader()
-        } else {
             exibeElementosHeader()
+        } else {
+            ocultaElementosHeader()
         }
     })
 
