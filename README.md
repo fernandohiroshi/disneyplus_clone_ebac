@@ -19,7 +19,7 @@ This guide describes the steps needed to install and initialize the DisneyPlus p
     Ensure you are in the project directory and run:
     ```bash
     npm install
-    ``
+    ```
 ## Available Scripts
 
 - `npm run dev`: Starts Gulp in development mode, watching for file changes.
