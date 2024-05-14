@@ -11,7 +11,7 @@ This guide describes the steps needed to install and initialize the DisneyPlus p
 
 1. **Clone the repository** (if applicable):
     ```bash
-    git clone <https://github.com/fernandohiroshi/disneyplus_clone_ebac.git>
+    git clone https://github.com/fernandohiroshi/disneyplus_clone_ebac.git
     cd disneyplus
     ```
 
@@ -19,8 +19,7 @@ This guide describes the steps needed to install and initialize the DisneyPlus p
     Ensure you are in the project directory and run:
     ```bash
     npm install
-    ```
-
+    ``
 ## Available Scripts
 
 - `npm run dev`: Starts Gulp in development mode, watching for file changes.
